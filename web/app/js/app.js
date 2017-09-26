@@ -2,5 +2,5 @@
 
 angular.module('app', [
 	'ngAnimate',
-	'ngCookies'
+	'ui.router'
 ]);

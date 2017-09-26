@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-ng-app="app">
 	<head>
 		<meta charset="utf-8" />
+		<!-- <base href = "/" /> -->
+		<!-- <script>
+		   document.write('<base href="' + document.location + '" />');
+		</script> -->
 		<title>Travelbross : Read reviews, Search destination</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 		<meta name="description" content="Travel related contents" />
   		<meta name="keywords" content="travel, tours, leisure, india, south india, tour package" />
+  		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+  		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  		<link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,600,700,800" rel="stylesheet" type="text/css">
+  		<link rel="stylesheet" href="../libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+  		<link rel="stylesheet" href="css/style.css">
+  		<link rel="stylesheet" href="css/custom.css">
 	</head>
 	<body>
-		<div>
-			<h3>TravelBross</h3>
-			<div>Travelbross is an indian travel website providing reviews of travel related contents</div>
-		</div>
+			<div class="app" ui-view></div>
+		<!-- Site preloader -->
+			<div class="la-anim-1 la-animate"></div>
+		    <section id="preloader">
+		        <div class="site-spinner"></div>
+		    </section>
+	    <!-- End Site preloader -->
+	
+		<!-- jQuery -->
+		<script src="../libs/jquery/jquery/dist/jquery.js"></script>
+		<!-- Bootstrap -->
+	    <script src="../libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+	    <!-- Angular -->
+	    <script src="../libs/angular/angular/angular.js"></script>
+	    <script src="../libs/angular/angular-animate/angular-animate.js"></script>
+	    <script src="../libs/angular/angular-cookies/angular-cookies.js"></script>
+	    <script src="../libs/angular/angular-cookies/angular-cookies.js"></script>
+	    <script src="../libs/angular/angular-ui-router/release/angular-ui-router.js"></script>
+
+	    <!-- App -->
+  		<script src="js/app.js"></script>
+  		<script src="js/config.js"></script>
+	    <!-- <script src="js/config.lazyload.js"></script> -->
+	    <script src="js/config.router.js"></script>
+  		<script>
+	    	jQuery(window).load(function(){
+	        	jQuery("#preloader").fadeOut(3000);
+	    	});
+	    	setTimeout(function() {
+			    // set timeout is to simulate the loading time
+			    // in your code it will not be required.
+			    $('.la-anim-1').removeClass('la-animate');
+			}, 5000);
+		</script>
+
 	</body>
 </html>

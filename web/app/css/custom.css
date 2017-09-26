@@ -1,0 +1,89 @@
+.mt-md {
+	margin-top: 15px;
+}
+.navbar-bottom {
+	bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+}
+.social-media {
+	margin-top: 25px;
+    margin-bottom: 25px;
+}
+.social-facebook {
+	background-color: #4867aa;
+    border-color: #4867aa;
+    color: white;
+    font-size: 20px;
+    padding: 15px 22px 15px 22px;
+    border-radius: 50px;
+}
+.social-twitter {
+	background-color: #1da1f2;
+    border-color: #1da1f2;
+    color: white;
+    font-size: 20px;
+    padding: 15px 18px 15px 18px;
+    border-radius: 50px;
+}
+.social-linkedin {
+	background-color: #007bb6;
+    border-color: #007bb6;
+    color: white;
+    font-size: 20px;
+    padding: 15px 18px 15px 18px;
+    border-radius: 50px;
+}
+.social-google {
+	background-color: #e5291b;
+    border-color: #e5291b;
+    color: white;
+    font-size: 20px;
+    padding: 15px 18px 15px 18px;
+    border-radius: 50px;
+}
+.social-instagram {
+	background-color: #e44458;
+    border-color: #e44458;
+    color: white;
+    font-size: 20px;
+    padding: 15px 18px 15px 18px;
+    border-radius: 50px;
+}
+.login-input {
+	position: relative;
+    font-size: 15px;
+    height: auto;
+    padding: 5px;
+    margin-bottom: -1px;
+}
+.login-pass {
+	position: relative;
+    font-size: 15px;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.container-wall {
+	padding: 40px 0px 30px 0px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 7px 4px rgba(1,1,1,0.16);
+}
+.signup-container-wall {
+	padding: 15px 40px 8px 30px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 7px 4px rgba(1,1,1,0.16);
+}
+.mg-t-sm {
+	margin-top: 20px;
+}
+.nav > li > a.signin {
+    border: 1px solid blueviolet;
+    padding: 8px 20px;
+    margin: 6px 5px;
+}
+.nav > li > a.signup {
+    border: 1px solid blueviolet;
+    padding: 8px 20px;
+    margin: 6px 5px;
+}

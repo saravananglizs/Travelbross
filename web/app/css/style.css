@@ -1,0 +1,141 @@
+/* Preloader      ||-------------------------------*/
+#preloader {
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999999999;
+}
+
+.site-spinner {
+    border: 2px solid #ddd;
+    font-size: 44px;
+    width: 44px;
+    height: 44px;
+    left: 50%;
+    top: 50%;
+    margin: -22px 0 0 -22px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-animation: site-spin 1s linear infinite;
+    -moz-animation: site-spin 1s linear infinite;
+    animation: site-spin 1s linear infinite;
+    border-top-color: #333;
+}
+
+@-webkit-keyframes site-spin {
+    to {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes site-spin {
+    to {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes site-spin {
+    to {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/* Preloader CSS*/
+.la-anim-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 3px;
+    background: #999;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    pointer-events: none;
+}
+
+.la-anim-1::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: #999;
+    box-shadow: 0 0 15px #999, 0 0 5px #999;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, box-shadow 2s 4s;
+    transition: opacity 0.2s, box-shadow 2s 4s;
+    -webkit-transform: rotate(2deg) translateY(-2px);
+    transform: rotate(2deg) translateY(-2px);
+}
+
+.la-anim-1.la-animate {
+    z-index: 99999;
+    opacity: 0;
+    -webkit-animation: preloader 5s infinite;
+    animation: preloader 5s infinite;
+}
+
+.la-anim-1.la-animate::after {
+    box-shadow: 0 0 3px #999, 0 0 1px #999;
+    opacity: 1;
+}
+
+@-webkit-keyframes preloader {
+  0%   { opacity: 0; -webkit-transform: translate3d(-100%, 0, 0); }
+  100% { opacity: 1; -webkit-transform: translate3d(0%, 0, 0); }
+}
+@keyframes preloader {
+  0%   { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  100% { opacity: 1; transform: translate3d(0%, 0, 0); }
+}
+.slider {
+    position: relative;
+    padding: 130px 0px 0px 0px;
+}
+.swiper-container {
+    width: 100%;
+    height: 807px;
+    overflow: hidden;
+}
+.slider .arrow-left {
+    display: block;
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 99;
+    width: 17px;
+    height: 31px;
+    background: url(../img/swipe-l.png) left top no-repeat;
+}
+.slider .arrow-right {
+    display: block;
+    position: absolute;
+    right: 45px;
+    top: 50%;
+    margin-top: -16px;
+    z-index: 99;
+    width: 17px;
+    height: 31px;
+    background: url(../img/swipe-r.png) left top no-repeat;
+}
