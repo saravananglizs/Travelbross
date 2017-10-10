@@ -2,5 +2,7 @@
 
 angular.module('app', [
 	'ngAnimate',
-	'ui.router'
+	'ui.router',
+	'oc.lazyLoad',
+	'ngBootbox'
 ]);
